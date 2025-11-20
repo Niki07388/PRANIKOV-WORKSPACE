@@ -1,0 +1,8 @@
+{
+  "name": "PRANIKOV Workspace",
+  "description": "A comprehensive project tracking and collaboration platform with role-based access and real-time chat.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
