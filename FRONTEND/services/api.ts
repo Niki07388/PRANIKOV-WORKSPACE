@@ -14,7 +14,7 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 // --- API client ---
 const apiFetch = async (path: string, options: RequestInit = {}) => {
   // Default to local Flask backend when VITE_API_BASE isn't configured in env
-  const base = ((import.meta as any).env && (import.meta as any).env.VITE_API_BASE) ? (import.meta as any).env.VITE_API_BASE : 'http://127.0.0.1:5000';
+  const base = ((import.meta as any).env && (import.meta as any).env.VITE_API_URL) ? (import.meta as any).env.VITE_API_URL : 'http://127.0.0.1:5000';
   const token = localStorage.getItem(KEYS.TOKEN);
   const defaultHeaders: Record<string, string> = { 'Content-Type': 'application/json' };
   if (token) defaultHeaders['Authorization'] = `Bearer ${token}`;
