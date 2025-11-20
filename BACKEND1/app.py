@@ -15,7 +15,7 @@ PORT = int(os.getenv('PORT', 5000))
 
 app = Flask(__name__)
 # Configuration (use the provided Postgres and JWT settings)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://uphill_user:1234@localhost:5432/pranikov-workspace'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'uphill_secret_key_2024'
 app.config['JWT_SECRET_KEY'] = 'uphill_jwt_secret_2024'
