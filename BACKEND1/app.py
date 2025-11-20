@@ -343,5 +343,4 @@ if __name__ == '__main__':
     # Ensure DB and seed data exist before running (inside app context)
     with app.app_context():
         seed_db()
-    print(f"Starting Flask app on port {PORT}, using DB: {app.config['SQLALCHEMY_DATABASE_URI']}")
-    app.run(host='0.0.0.0', port=PORT, debug=True)
+ 
