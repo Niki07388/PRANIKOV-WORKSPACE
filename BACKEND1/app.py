@@ -22,8 +22,16 @@ app.config['JWT_SECRET_KEY'] = 'uphill_jwt_secret_2024'
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(days=30)
 
 db = SQLAlchemy(app)
-CORS(app)
+# 🚨 BEGIN FIX: Explicitly configure CORS 🚨
 
+# 1. Define the Vercel Frontend URL (Use the exact URL provided)
+VERCEL_FRONTEND_URL = "https://pranikov-workspace.vercel.app"
+
+# 2. Update CORS to allow requests from the Vercel domain
+# resources={r"/*": {"origins": VERCEL_FRONTEND_URL}} ensures all API paths allow this origin.
+CORS(app, resources={r"/*": {"origins": VERCEL_FRONTEND_URL}}) 
+
+# 🚨 END FIX 🚨
 # Initialize JWT manager
 jwt = JWTManager(app)
 
