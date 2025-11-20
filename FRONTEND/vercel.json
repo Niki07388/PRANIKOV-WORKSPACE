@@ -1,0 +1,8 @@
+{
+  "build": {
+    "env": {
+      "VITE_API_URL": "https://pranikov-workspace.onrender.com"
+    }
+  },
+  "outputDirectory": "dist"
+}
