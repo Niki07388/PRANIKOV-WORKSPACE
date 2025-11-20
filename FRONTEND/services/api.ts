@@ -16,7 +16,7 @@ const apiFetch = async (path: string, options: RequestInit = {}) => {
   // 🚨 UPDATED: Using VITE_API_URL as confirmed by the user
   const base = ((import.meta as any).env && (import.meta as any).env.VITE_API_URL) 
     ? (import.meta as any).env.VITE_API_URL 
-    : 'http://127.0.0.1:5000';
+    : '';
     
   const token = localStorage.getItem(KEYS.TOKEN);
   const defaultHeaders: Record<string, string> = { 'Content-Type': 'application/json' };
