@@ -11,7 +11,7 @@ from flask_jwt_extended import JWTManager, create_access_token, jwt_required, ge
 
 load_dotenv()
 
-PORT = int(os.getenv('PORT', 5000))
+PORT = int(os.getenv('PORT', 10000))
 
 app = Flask(__name__)
 # Configuration (use the provided Postgres and JWT settings)
@@ -342,5 +342,6 @@ def health():
 if __name__ == '__main__':
     # Ensure DB and seed data exist before running (inside app context)
     with app.app_context():
+    app.run(host='0.0.0.0', port=PORT)
         seed_db()
  
