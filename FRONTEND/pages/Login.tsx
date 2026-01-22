@@ -146,9 +146,7 @@ export const Login: React.FC = () => {
           </button>
         </div>
         
-        {!isRegistering && (
-         
-        )}
+        {!isRegistering &&}
       </div>
     </div>
   );
