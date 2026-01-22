@@ -147,21 +147,7 @@ export const Login: React.FC = () => {
         </div>
         
         {!isRegistering && (
-          <div className="mt-6 bg-gray-900/50 p-3 rounded text-center border border-gray-700/50">
-             <p className="text-[10px] uppercase tracking-wider text-gray-500 mb-2 font-bold">Quick Demo Access</p>
-             <div className="grid grid-cols-2 gap-2">
-                <div className="text-left">
-                    <p className="text-xs text-indigo-400 font-semibold">Manager</p>
-                    <p className="text-[10px] text-gray-400 font-mono">manager@pranikov.com</p>
-                    <p className="text-[10px] text-gray-500 font-mono">pass: 123</p>
-                </div>
-                <div className="text-right">
-                    <p className="text-xs text-emerald-400 font-semibold">Employee</p>
-                    <p className="text-[10px] text-gray-400 font-mono">sarah@pranikov.com</p>
-                    <p className="text-[10px] text-gray-500 font-mono">pass: 123</p>
-                </div>
-             </div>
-          </div>
+         
         )}
       </div>
     </div>
