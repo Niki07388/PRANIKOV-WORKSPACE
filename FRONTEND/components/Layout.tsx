@@ -76,7 +76,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Briefcase size={24} className="text-white" />
           </div>
           <div>
-            <h1 className="text-xl font-bold tracking-tight">PRANIKOV</h1>
+            <h1 className="text-xl font-bold tracking-tight">COSMAVEXA</h1>
             <p className="text-xs text-gray-400 uppercase tracking-wider">Workspace</p>
           </div>
         </div>
