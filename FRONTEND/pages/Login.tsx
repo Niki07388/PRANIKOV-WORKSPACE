@@ -51,7 +51,7 @@ export const Login: React.FC = () => {
           <div className="bg-indigo-600 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-indigo-500/20">
             <Briefcase className="text-white w-7 h-7" />
           </div>
-          <h1 className="text-3xl font-bold text-white tracking-tight">PRANIKOV</h1>
+          <h1 className="text-3xl font-bold text-white tracking-tight">COSMOVEXA DEV</h1>
           <p className="text-gray-400 mt-2">Project Tracking Workspace</p>
         </div>
 
